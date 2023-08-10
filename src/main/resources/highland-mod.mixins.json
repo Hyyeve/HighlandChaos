@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "pet.blahaj.highlandmod.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinEntity",
+    "MixinFallingBlockEntity"
+  ],
+  "client": [
+    "MixinHandledScreen",
+    "MixinInGameHud",
+    "MixinMinecraftClient"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

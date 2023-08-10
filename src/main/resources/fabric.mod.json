@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "highland-mod",
+  "version": "${version}",
+  "name": "highland",
+  "description": "A Yoshi's Highland inspired randomizer",
+  "authors": [
+    "Hyeve",
+    "sipacid"
+  ],
+  "contact": {
+    "website": "https://blahaj.pet",
+    "repo": "https://github.com/eve/highland"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/highland-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "pet.blahaj.highlandmod.client.HighlandClient"
+    ],
+    "main": [
+      "pet.blahaj.highlandmod.Highland"
+    ]
+  },
+  "mixins": [
+    "highland-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
