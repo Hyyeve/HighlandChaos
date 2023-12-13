@@ -16,9 +16,6 @@
   "icon": "assets/highland-mod/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "pet.blahaj.highlandmod.client.HighlandClient"
-    ],
     "main": [
       "pet.blahaj.highlandmod.Highland"
     ]

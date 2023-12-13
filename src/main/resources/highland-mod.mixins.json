@@ -7,11 +7,6 @@
     "MixinEntity",
     "MixinFallingBlockEntity"
   ],
-  "client": [
-    "MixinHandledScreen",
-    "MixinInGameHud",
-    "MixinMinecraftClient"
-  ],
   "injectors": {
     "defaultRequire": 1
   }
