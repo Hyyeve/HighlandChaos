@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "id": "highland-mod",
   "version": "${version}",
-  "name": "highland",
+  "name": "Highland Chaos",
   "description": "A Yoshi's Highland inspired randomizer",
   "authors": [
     "Hyeve",
     "sipacid"
   ],
   "contact": {
-    "website": "https://blahaj.pet",
-    "repo": "https://github.com/eve/highland"
+    "website": "https://modrinth.com/mod/highland-chaos",
+    "repo": "https://github.com/Hyeve-jrs/HighlandChaos"
   },
   "license": "All-Rights-Reserved",
-  "icon": "assets/highland-mod/icon.png",
+  "icon": "assets/highland/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

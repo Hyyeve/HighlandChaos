@@ -13,7 +13,6 @@ public class Highland implements ModInitializer {
     public void onInitialize() {
         EffectManager.initialize_effects();
 
-
         ServerLifecycleEvents.SERVER_STARTED.register((context) -> {
             try {
                 SaveUtil.copy_out_preset("default");

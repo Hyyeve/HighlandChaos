@@ -50,6 +50,7 @@ public class InventoryShuffler implements HighlandEffect {
                     if (stack.isEmpty()) continue;
                     stack = stack.copyWithCount(stack.getCount() - EffectTimer.random_int(5));
                     if(stack.getCount() > stack.getMaxCount()) stack.setCount(stack.getMaxCount());
+                    if(stack.getCount() <= 0) stack.setCount(1);
                     inventory.setStack(slot, stack);
                 }
             }

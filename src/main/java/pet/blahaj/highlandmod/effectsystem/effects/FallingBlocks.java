@@ -1,7 +1,6 @@
 package pet.blahaj.highlandmod.effectsystem.effects;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
-import net.minecraft.block.BlockState;
 import net.minecraft.entity.FallingBlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.math.BlockPos;
@@ -44,7 +43,7 @@ public class FallingBlocks implements HighlandEffect {
                 FallingBlockEntity.spawnFromBlock(world, pos.add(1, 1, 1), world.getBlockState(pos.add(1, 1, 1)));
             }
 
-            entity.setHurtEntities(2.0f, 40);
+            entity.setHurtEntities(0.1f, 5);
         }));
     }
 }

@@ -30,7 +30,7 @@ public class HostileSpawner implements HighlandEffect {
 
     private void spawnMonster(ServerWorld world) {
 
-        int difficulty = (int) (Math.pow(EffectTimer.random(), 4.0) * 4.2);
+        int difficulty = (int) (Math.pow(EffectTimer.random(), 5.0) * 4.2);
 
         Entity entity = switch (difficulty) {
             case 0:
