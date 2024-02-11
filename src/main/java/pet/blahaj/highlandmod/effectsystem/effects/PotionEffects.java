@@ -33,7 +33,7 @@ public class PotionEffects implements HighlandEffect {
             int duration =  (int)(Math.pow(EffectTimer.random(), 2) * 600 + 20);
             int level = EffectTimer.random_int(1, 9);
             StatusEffectInstance instance = new StatusEffectInstance(Registries.STATUS_EFFECT.getRandom(Random.create()).get().value(), duration, level);
-            if(instance.getEffectType() == StatusEffects.INSTANT_DAMAGE) instance = new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 1, (int) (level * 0.1));
+            if(instance.getEffectType() == StatusEffects.INSTANT_DAMAGE) instance = new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, (int) (level * 0.1));
             if(instance.getEffectType() == StatusEffects.INSTANT_HEALTH) instance = new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, (int) (level * 0.5));
             if(instance.getEffectType() == StatusEffects.POISON) instance = new StatusEffectInstance(StatusEffects.POISON, (int) (0.1 * duration), (int) (level * 0.2));
             if(instance.getEffectType() == StatusEffects.WITHER) instance = new StatusEffectInstance(StatusEffects.WITHER, (int) (0.1 * duration), (int) (level * 0.2));
